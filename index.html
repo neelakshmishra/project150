@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>train</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene background="src:geoffroy-hauwen-_yQHVZCLXNI-unsplash.jpg">
+
+        <a-camera wasd-controls-enabled="false" position="0 8 20"></a-camera>
+    
+        <!-------------------------------------------Asset Management------------------------------------------->
+        <a-assets>      
+    
+          <!--Add Code Here-->
+          <a-asset-items src="Fantabulous Vihelmo/train.mtl" id="train-mtl"></a-asset-items>
+          <a-asset-items src="Fantabulous Vihelmo/tinker.obj" id="train-obj"></a-asset-items>
+        </a-assets>
+        <a-entity position="5 0 0" scale="0.1 0.1 0.1" rotation="-90 -40 0" obj-model="obj:#train-obj;mtl:#train-mlt"></a-entity>
+    </a-scene>    
+</body>
+</html>
